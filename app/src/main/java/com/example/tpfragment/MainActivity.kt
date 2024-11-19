@@ -4,9 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import com.example.tpfragment.Fragment_1
-import com.example.tpfragment.Fragment_2
 import com.example.tpfragment.databinding.ActivityMainBinding
 
 
@@ -20,12 +17,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.button1.setOnClickListener {
             remplaceFragment(Fragment_1(),
-                R.id.fragmentContainerView8, R.id.fragmentContainerView)
+                R.id.fragmentContainerView, R.id.fragmentContainerView)
             Toast.makeText(this@MainActivity, "Fragment 1 is changed", Toast.LENGTH_SHORT).show()
         }
         binding.button2.setOnClickListener {
             remplaceFragment(Fragment_2(),
-                R.id.fragmentContainerView, R.id.fragmentContainerView8)
+                R.id.fragmentContainerView, R.id.fragmentContainerView)
             Toast.makeText(this@MainActivity, "Fragment 2 is changed", Toast.LENGTH_SHORT).show()
 
         }

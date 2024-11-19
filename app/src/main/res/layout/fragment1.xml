@@ -3,4 +3,57 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".Fragment_1" android:background="#00defc"/>
+             tools:context=".Fragment_1"
+             android:background="#00defc">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- TextView en haut centré -->
+        <TextView
+                android:text="Fragment1"
+                android:layout_width="wrap_content"
+                android:layout_height="97dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:id="@+id/numeroVariable"/>
+
+        <!-- TextView compteur centré dans l'écran -->
+        <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/textView2"/>
+
+        <!-- LinearLayout avec les boutons alignés en bas -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+
+            <!-- Bouton à gauche -->
+            <Button
+                    android:text="Button1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/button1"/>
+
+            <!-- Bouton à droite -->
+            <Button
+                    android:text="Button2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/button2"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
